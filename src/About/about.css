@@ -1,0 +1,46 @@
+.about-div{
+    height: 1000px;
+    
+}
+.education{
+    text-align: center;
+    margin: 30px;
+  }
+
+ .grad, .sensec, .mat{
+    background: transparent;
+    display: inline-block;
+    width: 20%;
+    margin: 20px;
+    height: 400px;
+    border: 1px solid white;
+    behavior: inherit;
+}
+.mat:hover{
+    behavior: inherit;
+   
+    transition: width 1s, height 1s;
+    
+    width: 22%;
+    margin: 20px;
+    height: 410px;
+}
+.grad:hover{
+    behavior: inherit;
+   
+    transition: width 1s, height 1s;
+    
+    width: 22%;
+    margin: 20px;
+    height: 410px;
+}
+.sensec:hover{
+    behavior: inherit;
+   
+    transition: width 1s, height 1s;
+    
+    width: 22%;
+    margin: 20px;
+    height: 410px;
+   
+}

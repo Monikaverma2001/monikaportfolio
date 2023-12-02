@@ -1,0 +1,42 @@
+.contact-div{
+    
+    text-align: center;
+    height: 1000px;
+   
+}
+.contact-form{
+    padding: 10px;
+    display: inline-flex;
+    width: 60%;
+    flex-direction: column;
+    border: 1px solid gray;
+  border-radius: 10px;
+  background-image: url('./contact-backgrnd.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.contact-header{
+    font-family: cursive;
+}
+input{
+    
+    display: inline;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+}
+h4{
+    
+    color: aliceblue;
+    display: inline-flex;
+    width: 100px;
+}
+.buttons{
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    margin: 25px;
+    border-radius: 5px;
+    height: 30px;
+}

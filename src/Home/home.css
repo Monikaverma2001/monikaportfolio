@@ -1,0 +1,56 @@
+.home-div{
+    animation: fadeIn 9s;
+    color: black;
+    margin: 100px;
+    height: 800px;
+    text-align: center;
+    flex-direction: column;
+    
+}
+.dp{
+    text-align: center;
+    padding: 12px;
+    
+}
+.myimage{
+    margin-top: 70px;
+    border: 8px solid rgb(8, 165, 165);
+    height: 300px;
+    width: 18%;
+    border-radius: 57%;
+    object-fit: cover;
+    animation: fadeIn 2s;
+}
+.myimage:hover{
+    height: 310px;
+    width: 19%;
+    border-radius: 67%;
+    transition: width 1s, height 1s;
+}
+.domain{
+    animation: fadeIn 5s;
+    font-size: 35px;
+    color: aliceblue;
+    font-family:cursive ;
+    
+}
+.my-detail{
+    animation: fadeIn 7s;
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    font-size: 14px;
+    
+}
+.etalic{
+    animation: fadeIn 9s;
+    color: yellow;
+    font-style: italic;
+    font-size: 14px;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
