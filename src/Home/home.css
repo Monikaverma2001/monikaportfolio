@@ -1,29 +1,54 @@
 .home-div{
+    display: flex;
     animation: fadeIn 9s;
     color: black;
-    margin: 100px;
+    margin: 0px;
     height: 800px;
     text-align: center;
-    flex-direction: column;
     
+    
+}
+.myname{
+    margin-top: 40px;
+    padding-top: 30px;
+    color: rgb(246, 230, 230);
+    font-size: 20px;
+    text-shadow: 2px 4px 4px rgb(96, 49, 225);;
+}
+.job{
+    font-size: 70px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.heading{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    background:linear-gradient(90deg in oklab, rgba(4, 29, 129, 0.608), rgba(255, 121, 141, 0.725));
+    font-weight: bolder;
+    height: 280px;
+    text-shadow:2px 4px 4px rgb(255, 1, 1);;
+    color: rgb(255, 255, 255);
+   
+    font-size: x-large;
 }
 .dp{
     text-align: center;
     padding: 12px;
-    
+    width: 70%;
+    padding: 50px;
 }
 .myimage{
-    margin-top: 70px;
-    border: 8px solid rgb(8, 165, 165);
+    
+    border: 8px solid rgba(46, 33, 113, 0.459);
     height: 300px;
-    width: 18%;
+  
     border-radius: 57%;
     object-fit: cover;
     animation: fadeIn 2s;
 }
 .myimage:hover{
     height: 310px;
-    width: 19%;
+   
     border-radius: 67%;
     transition: width 1s, height 1s;
 }
@@ -49,6 +74,9 @@
     color: yellow;
     font-style: italic;
     font-size: 14px;
+}
+.mydetails{
+    padding: 90px;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }

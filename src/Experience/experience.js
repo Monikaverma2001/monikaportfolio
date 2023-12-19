@@ -1,7 +1,7 @@
 import './exp.css'
 function Experience(){
     return (<div className='exp-div'>
-        <h2>Experience</h2>
+        <h1>Experience</h1>
        <div className='two-div'>
         <div className='exp-detail'>Details
             <div>Company Name</div>

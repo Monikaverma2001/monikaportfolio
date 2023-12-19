@@ -3,21 +3,23 @@ const scroltohome=()=>{
     window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
 }
 const scroltoabout=()=>{
-    window.scrollTo({top: 900, left: 0, behavior: 'smooth' });
+    window.scrollTo({top: 1100, left: 0, behavior: 'smooth' });
    
 }
 const scroltoproject=()=>{
-    window.scrollTo({top: 1950, left: 0, behavior: 'smooth' });
+    window.scrollTo({top: 2100, left: 0, behavior: 'smooth' });
    
 }
 const scroltoexp=()=>{
-    window.scrollTo({top: 3200, left: 0, behavior: 'smooth' });
+    window.scrollTo({top: 3500, left: 0, behavior: 'smooth' });
     
 }
 const scroltocontact=()=>{
-    window.scrollTo({top: 3600, left: 0, behavior: 'smooth' });
+    window.scrollTo({top: 3900, left: 0, behavior: 'smooth' });
 }
 function Navbar(){
+
+
     return (<ul className='navbar'>
         <li className='navbar-items' ><button onClick={scroltohome}>Home   </button></li>
         <li className='navbar-items'><button onClick={scroltoabout}>Education</button></li>

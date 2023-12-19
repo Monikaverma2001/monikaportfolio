@@ -1,5 +1,5 @@
 .navbar{
-    background-color: rgb(244, 244, 244);
+    background:linear-gradient(90deg in oklab, rgba(4, 29, 129, 0.771), rgba(255, 121, 141, 0.849));
     width: 100%;
     position: fixed;
     top:0;
@@ -8,14 +8,15 @@
     margin-top: 0px;
 }
 .navbar-items {
+    font-size: 18px;
     display: inline-flex;
     flex-direction: column;
     margin:10px 10px;
 }
 .navbar-items button{
     border: 0px solid white;
-    color: rgb(0, 0, 0) ;
-    font-size: 14px;
+    color: rgb(254, 254, 254) ;
+    font-size: 19px;
     background-color: transparent;
 }
 .navbar-items button:hover{

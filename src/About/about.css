@@ -1,22 +1,37 @@
 .about-div{
     height: 1000px;
-    
+    justify-content: center;
 }
 .education{
-    text-align: center;
+    
     margin: 30px;
   }
 
  .grad, .sensec, .mat{
+    
     background: transparent;
-    display: inline-block;
-    width: 20%;
-    margin: 20px;
-    height: 400px;
-    border: 1px solid white;
+    /* display: inline-block; */
+   padding: 50px;
+    
+    height: 150px;
+    /* border: 1px solid white; */
     behavior: inherit;
+    color: aliceblue;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.mat:hover{
+.edu-detail{
+    display: inline-block;
+    
+}
+.passing{
+    display:inline;
+    float: inline-end;
+}
+h3{
+    text-decoration: underline;
+}
+/* .mat:hover{
     behavior: inherit;
    
     transition: width 1s, height 1s;
@@ -27,20 +42,22 @@
 }
 .grad:hover{
     behavior: inherit;
-   
     transition: width 1s, height 1s;
-    
     width: 22%;
     margin: 20px;
     height: 410px;
 }
 .sensec:hover{
     behavior: inherit;
-   
     transition: width 1s, height 1s;
-    
     width: 22%;
     margin: 20px;
     height: 410px;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
    
+} */
+.exp-edu{
+    color: aliceblue;
+    text-align: center;
+    font-family:sans-serif;
 }
