@@ -20,7 +20,14 @@ app.post("/", (req, res) => {
   res.send(true);
 
 });
+app.post("/login/admin", (req, res) => {
+  const value =req.body;
+  console.log(value);
+  
+  res.send(true);
 
-app.listen(4000, () => {
-  console.log(`http://localhost:9000`);
+});
+let port=4000
+app.listen(port, () => {
+  console.log(`http://localhost:${port}`);
 });

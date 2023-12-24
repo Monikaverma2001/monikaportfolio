@@ -19,13 +19,7 @@
 .contact-header{
     font-family: cursive;
 }
-input{
-    
-    display: inline;
-    width: 200px;
-    height: 20px;
-    border-radius: 10px;
-}
+
 h4{
     
     color: aliceblue;

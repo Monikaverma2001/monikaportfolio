@@ -1,9 +1,12 @@
+import Navbar from '../Navbars/Navbar';
+
 import './home.css';
 
 
 function Home(){
     return (
         <>
+          <Navbar />
         <div className='heading'>
             <div className='myname'>Monika Verma</div>
             <div className='job'>
@@ -23,6 +26,7 @@ These themes aren’t only designed to look great, they’re designed to work gr
             <div></div></div>
 
         </div>
+        
         </>
     )
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Navbar.css'
 const scroltohome=()=>{
     window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
@@ -21,12 +22,12 @@ function Navbar(){
 
 
     return (<ul className='navbar'>
-        <li className='navbar-items' ><button onClick={scroltohome}>Home   </button></li>
-        <li className='navbar-items'><button onClick={scroltoabout}>Education</button></li>
-        <li className='navbar-items'><button onClick={scroltoproject}>Projects</button></li>
-        <li className='navbar-items'><button onClick={scroltoexp}>Experience</button></li>
-        <li className='navbar-items'><button onClick={scroltocontact}>Contact us</button></li>
-        <li className='navbar-items'><button >Log In</button></li>
+        <li className='navbar-items' ><Link className='login-link' onClick={scroltohome} >Home   </Link></li>
+        <li className='navbar-items'><Link  className='login-link' onClick={scroltoabout}>Education</Link></li>
+        <li className='navbar-items'><Link  className='login-link' onClick={scroltoproject}>Projects</Link></li>
+        <li className='navbar-items'><Link  className='login-link' onClick={scroltoexp}>Experience</Link></li>
+        <li className='navbar-items'><Link  className='login-link' onClick={scroltocontact}>Contact us</Link></li>
+        <li className='navbar-items'><Link to={'/admin'} className='login-link'>Login</Link></li>
     </ul>)
 }
 

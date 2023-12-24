@@ -1,0 +1,28 @@
+.log-div{
+    margin: 200px;
+   text-align: center;
+}
+.login-btn{
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    margin: 25px;
+    border-radius: 5px;
+    height: 30px;
+    margin-right: 38%;
+}
+.back-btn{
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    margin: 25px;
+    border-radius: 5px;
+    height: 30px;
+    margin-left: 38%;
+    background-color: aliceblue;
+    text-decoration: none;
+    
+
+}

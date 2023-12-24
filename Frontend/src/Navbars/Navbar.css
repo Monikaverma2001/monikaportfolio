@@ -20,7 +20,8 @@
     background-color: transparent;
 }
 .navbar-items button:hover{
-    
+    overflow: hidden;
+    cursor: pointer;
     padding-left: 20px;
     padding-right: 20px;
     border: 0px solid rgb(242, 242, 242);
@@ -30,3 +31,8 @@
    background-color: #dedede;
 }
 
+.login-link{
+    text-decoration: none;
+    color: rgb(254, 254, 254) ;
+    font-size: 19px;
+}
