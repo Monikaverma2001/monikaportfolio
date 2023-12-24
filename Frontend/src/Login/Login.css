@@ -3,26 +3,24 @@
    text-align: center;
 }
 .login-btn{
-    float: right;
+    display: inline;
+    
     font-size: 15px;
     font-weight: bold;
-    width: 100px;
+    width: 200px;
     margin: 25px;
     border-radius: 5px;
     height: 30px;
-    margin-right: 38%;
+    
 }
 .back-btn{
-    float: left;
-    font-size: 15px;
+    display: inline;
+   color: black; font-size: 15px;
     font-weight: bold;
-    width: 100px;
+    width: 200px;
     margin: 25px;
-    border-radius: 5px;
-    height: 30px;
-    margin-left: 38%;
-    background-color: aliceblue;
+   
     text-decoration: none;
-    
+
 
 }

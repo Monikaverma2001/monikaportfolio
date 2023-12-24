@@ -3,9 +3,11 @@ import './Login.css'
 import axios from 'axios';
 
 import { Link } from 'react-router-dom';
+import Admin from '../Admin/Admin';
 
 
-const Loggin=()=>{
+function Loggin(){
+    const [authenticated,setAuthenticated]=useState(false)
     const [username,setUsername]=useState('admin')
     const [password,setPassword]=useState('')
     const logindata=[username,password]
@@ -14,10 +16,11 @@ const Loggin=()=>{
         e.preventDefault();
         try{
             
-            const log=await axios.post('http://localhost:4000/login/admin',logindata).then((result,err)=>{
+            const lo=await axios.post('http://localhost:4000/login/admin',logindata).then((result,err)=>{
             if(result){
-                console.log("logged in")
-                return (<><h1>{result}</h1></>)
+              
+                setAuthenticated(true);
+                
             }
            
         })
@@ -25,24 +28,32 @@ const Loggin=()=>{
         catch(err)
         {
             console.log(err)
-            return (<><h1>Error</h1></>)
+            
         }
         
+        
+    }
+    if(authenticated===false)
+    {
+        return (<>
+            <><div className='log-div'>
+                
+                <h2 className='log-header'>Log In</h2>
+               <form className='log-form' method='post'>
+                    <div className='form-div'><h4>UserName</h4><input type='text' name='name' value={username} onChange={(e)=>setUsername(e.target.value)}></input></div>
+                    <div className='form-div'><h4>Password</h4><input type='text' name='name' value={password} onChange={(e)=>setPassword(e.target.value)} ></input></div>
+                    <button className='login-btn' onClick={submitLog}>LogIn</button>
+                    <button className='login-btn'><Link to='/' className='back-btn'>Cancel</Link></button>
+               </form>
+              
+            </div>
+            </>
+            </>)
+    }
+    else{
+        return (<><Admin /></>)
     }
     
-    return (<>
-    <><div className='log-div'>
-        
-        <h2 className='log-header'>Log In</h2>
-       <form className='log-form' method='post'>
-            <div className='form-div'><h4>UserName</h4><input type='text' name='name' value={username} onChange={(e)=>setUsername(e.target.value)}></input></div>
-            <div className='form-div'><h4>Password</h4><input type='password' name='name' value={password} onChange={(e)=>setPassword(e.target.value)} ></input></div>
-            <button className='login-btn' onClick={submitLog}>LogIn</button>
-            <Link to='/' className='back-btn'>Cancel</Link>
-       </form>
-      
-    </div>
-    </>
-    </>)
+    
 }
 export default Loggin;
